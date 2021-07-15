@@ -1,0 +1,31 @@
+body
+{  
+    background-image:url('');
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.employee{
+    background-color:green;
+    width:900px;
+    margin:auto;
+    color:black;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+}
+input{
+    border-radius: 8px;
+    padding: 5px;
+    border: green 2px solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
