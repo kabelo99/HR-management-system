@@ -27,19 +27,11 @@
 	$sql = "INSERT INTO dependents (FORCE_NO,SURNAME,NAMES,DOB,GENDER,RELATIONSHIP,BIRTH_CERTIFICATE_NO) VALUES
 			('".$FORCE_NO."','".$SURNAME."','".$NAMES."','".$DOB."','".$GENDER."','".$RELATIONSHIP."',
 			'".$BIRTH_CERTIFICATE_NO."')";
-			
-	$sql .= "INSERT INTO dependents (FORCE_NO,SURNAME,NAMES,DOB,GENDER,RELATIONSHIP,BIRTH_CERTIFICATE_NO) VALUES
-			('".$FORCE_NO."','".$SURNAME."','".$NAMES."','".$DOB."','".$GENDER."','".$RELATIONSHIP."',
-			'".$BIRTH_CERTIFICATE_NO."')";
-			
-	$sql .= "INSERT INTO dependents (FORCE_NO,SURNAME,NAMES,DOB,GENDER,RELATIONSHIP,BIRTH_CERTIFICATE_NO) VALUES
-			('".$FORCE_NO."','".$SURNAME."','".$NAMES."','".$DOB."','".$GENDER."','".$RELATIONSHIP."',
-			'".$BIRTH_CERTIFICATE_NO."')";
 	 
-	if($conn->mysqli_multi_query($sql) === TRUE){
-		echo "<h5>Dependent information stored successfully."
+	if(mysqli_query($conn, $sql)){
+		echo "<h3>Dependent information stored successfully."
 			. " Please browse your localhost php my admin"
-			. " to view the updated data</h5>";
+			. " to view the updated data</h3>";
 			header("location:HR.html");
 	} else{
 		echo "ERROR: Hush! Sorry $sql. "
