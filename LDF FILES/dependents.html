@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+table, th, td{
+
+border: 2px solid black;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 7px;
+text-align: left;
+}
+t1{
+background-color:#022e4f;
+}
+
+#t1 th{
+color:white;
+background-color: #005c5a;
+}
+
+</style>
+</head>
+<body>
+<form action= "dependents.php" method="Post">
+<h1> HUMAN RESOURCE MANAGEMENT SYSTEM</h1>
+<h2> DEPENDENTS(CHILDREN BELOW 18 & THEIR BIRTH CERTIFICATES)</h2>
+
+<table style = "width: 70%" id= "t1" cellpadding="1" cellspacing="7">
+<tbody>
+<tr>
+	<th> Force NO</th>
+	<th> Surname</th>
+	<th>Names </th>
+	<th> DOB</th>
+	<th> Gender</th>
+	<th> Relationship</th>
+	<th> Birth Certificate Number</th>
+</tr>
+<tr>
+	<td><input type="text" name="FORCE_NO" placeholder="force number"></td>
+	<td><input type="text" name="SURNAME" placeholder="surname"></td>
+	<td><input type="text" name="NAMES" placeholder="full names"></td>
+	<td><input type="text" name="DOB" placeholder="date of birth"></td>
+	<td>
+		<select name="GENDER">
+		<option VALUE="Male">Male</option>
+		<option value="Female">Female</option>
+		</select>
+	</td>
+	<td><input type="text" name="RELATIONSHIP" placeholder="relationship"></td>
+	<td><input type="text" name="BIRTH_CERTIFICATE_NO" placeholder="birth certificate number"></td>
+</tr>
+<tr>
+	<td><input type="text" name="FORCE_NO" placeholder="force number"></td>
+	<td><input type="text" name="SURNAME" placeholder="surname"></td>
+	<td><input type="text" name="NAMES" placeholder="full names"></td>
+	<td><input type="text" name="DOB" placeholder="date of birth"></td>
+	<td>
+		<select name="GENDER">
+		<option VALUE="Male">Male</option>
+		<option value="Female">Female</option>
+		</select>
+	</td>
+	<td><input type="text" name="RELATIONSHIP" placeholder="relationship"></td>
+	<td><input type="text" name="BIRTH_CERTIFICATE_NO" placeholder="birth certificate number"></td>
+</tr>
+<tr>
+	<td><input type="text" name="FORCE_NO" placeholder="force number"></td>
+	<td><input type="text" name="SURNAME" placeholder="surname"></td>
+	<td><input type="text" name="NAMES" placeholder="full names"></td>
+	<td><input type="text" name="DOB" placeholder="date of birth"></td>
+	<td>
+		<select name="GENDER">
+		<option VALUE="Male">Male</option>
+		<option value="Female">Female</option>
+		</select>
+	</td>
+	<td><input type="text" name="RELATIONSHIP" placeholder="relationship"></td>
+	<td><input type="text" name="BIRTH_CERTIFICATE_NO" placeholder="birth certificate number"></td>
+</tr>
+
+<tr>
+	<td><input type="submit" value="register">
+	<input type="reset" value="cancel"></td>
+</tr>
+</tbody>
+
+ </table>
+ 
+</form>
+
+
+
+</body>
+</html>

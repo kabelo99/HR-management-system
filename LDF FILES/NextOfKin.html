@@ -1,59 +1,76 @@
 <!Doctype html>
 <html>
-<title>next of kin </title>
+          <title>next of kin </title>
+          <link rel = "stylesheet" type = "text/css" href = "HR style.css">
 <body>
-  <h1>Human Resource Management System </h1>
-		<h2>Next of kin Details</h2>
+   <marquee><h1><font color="red"> Human Resource Management System Registration Form </h1></marquee></font>
 		
-		<form>
-		<table>
+	<div class= "hr">
+	  <form action="NextOfKin.php" method="Post">
+	  <h2>Next of kin Details</h2>
+		 <table>
 		 <tr>
-			   <td>surname </td>
-			   <td><input type="text" name="surname"></td>
-		 </tr>
-	     <tr>
+			<td>Force_No </td>
+			<td><input type="text" name="FORCE_NO" placeholder="force number"></td>
+
+			<td>Title</td>
+			<td>
+				 <select name="TITLE">
+					 <option value="Mr">Mr</option>
+					 <option value="Mrs">Mrs</option>
+					 <option value="Mr">Dr</option>
+					 <option value="Major">Major</option>
+					  <option value="Miss">Miss</option>
+				 </select>  
+			</td>
+	     </tr>
+		 <tr>
+			   <td>Surname </td>
+			   <td><input type="text" name="SURNAME" placeholder="surname"></td>
+		 
 			   <td>names</td>
-			   <td><input type="text" name="name"></td>
+			   <td><input type="text" name="NAMES" placeholder="full names"></td>
 	     </tr>
 		  <tr>
 			   <td> Relationship</td>
-			   <td><input type="text" name="relationship"></td>
+			   <td><input type="text" name="RELATIONSHIP" placeholder="relationship"></td>
+	     
+			   <td> Gender</td>
+		      <td>
+              <select name="GENDER">
+				<option VALUE="Male">Male</option>
+				<option value="Female">Female</option>
+		      </select>
+	      </td>
 	     </tr>
 		  <tr>
-			   <td> Date of birth</td>
-			   <td><input type="text" name="DoB"></td>
-	     </tr>
-		   <tr>
-			   <td> country of birth</td>
-			   <td><input type="text" name="countryOB"></td>
-	     </tr>
-		  <tr>
+			   <td> DOB</td>
+			   <td><input type="text" name="DOB" placeholder="date of birth"></td>
+	     
 			   <td>Nationality</td>
-			   <td><input type="text" name="nationality"></td>
+			   <td><input type="text" name="NATIONALITY" placeholder="nationality"></td>
 	     </tr>
 		  <tr>
 			   <td>ID NO:</td>
-			   <td><input type="text" name="id_number"></td>
-	     </tr>
-		  <tr>
+			   <td><input type="text" name="NID_NUMBER" placeholder="national identity number"></td>
+	     
 			   <td> Home Address</td>
-			   <td><input type="text" name="address"></td>
+			   <td><input type="text" name="HOME_ADDRESS" placeholder="home address"></td>
 	     </tr>
 		  <tr>
-			   <td> Mobile No:</td>
-			   <td><input type="text" name="M_number"></td>
-	     </tr>
-		  <tr>
-			   <td> email</td>
-                 <td><input type="text" name="email address"></td>	    
+			<td> Home Phone:</td>
+			<td><input type="text" name="HOME_PHONE" placeholder="home phone"></td>
+			<td> Mobile Phone:</td>
+			<td><input type="text" name="MOBILE_PHONE" placeholder="mobile phone"></td>
+			<td>Email Address</td>
+			<td><input type="text" name="EMAIL" placeholder="email address"></td>	    
 		 </tr>
-		 
-	    </form>
-		</table>
-		  <input type="submit" value="register"></td>
-		  <input type="reset" value="cancel"></td>
-
-
-  
+		  <tr>
+		       <td><input type="submit" value="register"></td>
+		       <td><input type="reset" value="cancel"></td>
+		  </tr>
+		  </table>
+	 </form>
+     </div>  
 </body>
 </html>

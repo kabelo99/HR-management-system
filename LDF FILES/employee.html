@@ -2,44 +2,48 @@
 <html>
    <head>
        <title>employee form</title>
+	   <link rel = "stylesheet" type = "text/css" href = "HR style.css">
    </head>
    <body>
-   <h1>Human Resource Management System Registration Form</h1>
-      <form >
+   <marquee><h1><font color="red"> Human Resource Management System Registration Form </h1></marquee></font>
+    <HR>
+   
+	  <div class= "hr">
+          <form action= "Register_Employee.php" method="POST">
+		     <h2>EMPLOYEE DETAILS</h2>
                 <table>
 					<tr>
 				        <td>Force_NO</td>
-                        <td><input type="text" name="F_number" placeholder="force number"></td>
+                        <td><input type="text" name="FORCE_NO" placeholder="force number"></td>
                         <td>Employment_Number</td>
-                        <td><input type="text" name="E_number" placeholder="employment number"></td>
+                        <td><input type="text" name="EMPLOYMENT_NO" placeholder="employment number"></td>
                         <td>Title</td>
                         <td>
-                             <select name="title">
+                             <select name="TITLE">
                                  <option value="Mr">Mr</option>
                                  <option value="Mrs">Mrs</option>
-                                 <option value="Mr">Dr</option>
-                                 <option value="Major">major</option>
+                                 <option value="Dr">Dr</option>
+                                 <option value="Major">Major</option>
                                   <option value="Miss">Miss</option>
                              </select>  
                         </td>
                     </tr>
 				    <tr>
                         <td>Surname</td>
-                        <td><input type="text" name="surname" placeholder="surname"></td>
+                        <td><input type="text" name="SURNAME" placeholder="surname"></td>
                         <td>First_name</td>
-                        <td><input type="text" name="firstname" placeholder="firstname"></td>	
-                        <td>Other names</td>
-                        <td><input type="text" name="other" placeholder="other names"></td>					
-                    </tr>
-                   
-                    <tr>
+                        <td><input type="text" name="FIRSTNAME" placeholder="firstname"></td>	
                         <td>Email_Address</td>
-                        <td><input type="email" name="email" placeholder="email address"></td>
+                        <td><input type="email" name="EMAIL" placeholder="email address"></td>					
+                    </tr>
+                    <tr>
+                        <td>OTHER NAMES</td>
+                        <td><input type="text" name="OTHER_NAMES" placeholder="other names"></td>
                         <td>Previous surname</td>
-                        <td><input type="text" name="contacts" placeholder="phone_number"></td>
+                        <td><input type="text" name="PREVIOUS_SURNAME" placeholder="Previous Surname"></td>
                         <td>Gender</td>
                         <td>
-                            <select name="gender">
+                            <select name="GENDER">
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select>   
@@ -47,20 +51,20 @@
                      </tr>
                      <tr>
                          <td>Date of birth</td>
-                         <td><input type="text" name="birth" placeholder="date of birth"></td>
+                         <td><input type="text" name="DOB" placeholder="date of birth"></td>
                          <td>NID Number</td>
-                         <td><input type="text" name=" id_number" placeholder="id number"></td>
+                         <td><input type="text" name="NID_NUMBER" placeholder="id number"></td>
                          <td>Issue Date</td>
-                         <td><input type="text" name=" issue" placeholder="issue date"></td>
+                         <td><input type="text" name="ISSUE_DATE" placeholder="issue date"></td>
                      </tr> 
 					 <tr>
                          <td>Expiry Date</td>
-                         <td><input type="text" name="expire" placeholder="expire"></td>
+                         <td><input type="text" name="EXPIRY_DATE" placeholder="expire date"></td>
                          <td>Citizenship</td>
-                         <td><input type="text" name="citizenship" placeholder="country" ></td>
+                         <td><input type="text" name="CITIZENSHIP" placeholder="country" ></td>
                          <td>Marital Status</td>
                         <td>
-                            <select name="marital_status">
+                            <select name="MARITAL_STATUS">
                                 <option value="Single">Single</option>
                                 <option value="Married">Married</option>
                                 <option value="Legally Separated">Legally Separated</option>
@@ -68,15 +72,30 @@
                                 <option value="Widow">Widow</option>
                             </select>  
                         </td>
-                     </tr>
+                     </tr> 
                      <tr>
-                         <td>Mobile Phone</td>
-                         <td><input type="text" name="mobile" placeholder="contact number"></td>
-                         <td>Work Phone</td>
-                         <td><input type="text" name="work" placeholder="work number"></td>
-                         <td>Fax Number</td>
-                         <td><input type="text" name="fax" placeholder="fax number"></td>
-                     </tr> 					 
+                        <td>Mobile Phone</td>
+                        <td><input type="text" name="MOBILE_PHONE" placeholder="contact number"></td>
+                        <td>Work Phone</td>
+                        <td><input type="text" name="WORK_PHONE" placeholder="work number"></td>
+                        <td>Fax Number</td>
+                        <td><input type="text" name="FAX_NUMBER" placeholder="fax number"></td>
+                     </tr> 	
+					<tr>
+						<td>Employee Image: </td>
+                        <td><input type="file" name="PHOTO" placeholder="Upload Image"></td>
+
+					  <td>Any Disability?</td>
+					  <td>
+					 <select name="ANY_DISABILITY">
+						 <option VALUE="YES">Yes</option>
+						 <option VALUE="NO">No</option>
+					 </select>
+					  </td>
+
+					   <td> disability if any</td>
+					   <td><textarea NAME="TYPE_F_DISABILITY" placeholder="fill in here to describe type of disability ... " ></textarea>
+					</tr>
                      <tr>
                          <td><input type="submit" name="register" value="submit"></td>
                          <td><input type="reset" name="cancel" value="cancel"></td>
